@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Currículo</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="Images/favicon-32x32.png">
+    <style>
+        footer {
+            background-color: #f8f9fa;
+            padding: 20px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="#"><img rel="icon" type="image/x-icon" src="https://raw.githubusercontent.com/JPedroCMartins/GeradorDeCurriculo/refs/heads/main/Images/favicon-32x32.png"> Gerador de Currículo</a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col text-center">
+                <h1>Gerador de Currículo</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col text-center">
+                <button class="btn btn-primary btn-lg mr-2" onclick=''>Gerar Currículo</button>
+                <button class="btn btn-secondary btn-lg ml-2" onclick=''>Database</button>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <table border='1' class='table table-dark'>
+                <tr>
+                    <th>Código</th>
+                    <th>Nome</th>
+                    <th>Email</th>
+                    <th>Curriculo</th>
+                    <th>Opção</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Exemplo Nome</td>
+                    <td>exemplo@email.com</td>
+                    <td><a href="#" onclick="">Exibir (para impressão)</a></td>
+                    <td><a href="#">Apagar</a> | <a href="#">Editar</a></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="container mt-5" id="erro"></div>
+
+    <footer>
+        <div class="container">
+            <p class="text-center">© JPedroCMartins</p>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
